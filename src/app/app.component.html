@@ -4,29 +4,39 @@
 
     <ul class="nav nav-pills">
       <li class="nav-item">
-        <a class="nav-link" routerLinkActive="active" routerLink="/home">Home</a>
+        <a class="nav-link" routerLinkActive="active" routerLink="/home"
+          >Home</a
+        >
       </li>
       <li class="nav-item">
-        <a class="nav-link" routerLinkActive="active" routerLink="/about">About</a>
+        <a class="nav-link" routerLinkActive="active" routerLink="/about"
+          >About</a
+        >
       </li>
       <li class="nav-item">
-        <a class="nav-link" routerLinkActive="active" routerLink="/service">Services</a>
+        <a class="nav-link" routerLinkActive="active" routerLink="/service"
+          >Services</a
+        >
       </li>
       <li class="nav-item">
-        <a class="nav-link" routerLinkActive="active" routerLink="/contact">Contact</a>
+        <a class="nav-link" routerLinkActive="active" routerLink="/contact"
+          >Contact</a
+        >
       </li>
-             
-           
+
       <nav>
-        <select (change)="routeToLink()" id="department" name="department" [(ngModel)]="selectedNavLink" class="form-control">
-            <option *ngFor="let link of navLinks" [ngValue]="link"> 
-              {{link.label}}
-            </option>
-          </select>
-    </nav>
-   
- 
-    
+        <select
+          (change)="routeToLink()"
+          id="department"
+          name="department"
+          [(ngModel)]="selectedNavLink"
+          class="form-control"
+        >
+          <option *ngFor="let link of navLinks" [ngValue]="link">
+            {{ link.label }}
+          </option>
+        </select>
+      </nav>
     </ul>
   </div>
 </nav>

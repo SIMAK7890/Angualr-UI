@@ -29,7 +29,7 @@ p{
 
 }
 p:hover{
-    color: orange;
+    color: blue;
     transform: scale(1.1)  ;
 }
 iframe{
